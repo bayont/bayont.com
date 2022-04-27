@@ -6,3 +6,69 @@ body {
    @apply bg-gray-900 text-gray-100;
    font-family: 'Source Code Pro', sans-serif;
 }
+
+.avatar {
+   @apply bg-gray-700;
+   animation: circleIn 3s ease-out;
+   clip-path: circle(50%);
+}
+
+.first {
+   z-index: -1;
+   animation: slideIn 0.5s 0.75s linear forwards;
+   opacity: 0;
+   width: max-content;
+}
+
+.second {
+   z-index: -1;
+   width: max-content;
+   opacity: 0;
+
+   animation: slideIn2 0.4s 1.55s linear forwards;
+}
+
+.third {
+   z-index: -1;
+   width: max-content;
+   opacity: 0;
+
+   animation: slideIn2 0.4s 2.5s linear forwards;
+}
+
+@keyframes slideIn2 {
+   0% {
+      opacity: 0;
+      transform: translateX(-100px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes slideIn {
+   0% {
+      opacity: 0;
+   }
+   20% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(200px);
+   }
+}
+
+@keyframes circleIn {
+   0% {
+      clip-path: circle(0%);
+   }
+   50% {
+      clip-path: circle(100%);
+   }
+   100% {
+      clip-path: circle(50%);
+   }
+}
