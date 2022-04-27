@@ -7,20 +7,18 @@
 
 <div class="sm:px-0 px-5 mt-10 ">
    <div class="w-full flex justify-center">
-      <div class="relative w-[500px]">
-         <img class="avatar" src="/avatar.png" alt="Avatar" />
-         <div>
-            <div class="text-left text-4xl first absolute left-0 top-0">
-               Hi &#x1F44B;
-               <div class="text-left text-lg mt-5 second">
-                  My name is <span class="font-semibold">Fabian Fetter</span>
-               </div>
-               <div class="text-lg mt-5 third">
-                  And I'm a <span class="text-main-accent-light"
-                     >Frontend Developer</span
-                  >
-               </div>
-            </div>
+      <div class="flex items-center">
+         <img class="avatar aspect-square" src="/avatar.png" alt="Avatar" />
+      </div>
+      <div class="flex flex-col ml-5">
+         <div class="text-center text-4xl first">Hi &#x1F44B;</div>
+         <div class="text-center text-base mt-5 second">
+            My name is <span class="font-semibold">Fabian Fetter</span>
+         </div>
+         <div class="text-center text-base mt-5 third">
+            And I'm a <span class="text-main-accent-light"
+               >Frontend Developer</span
+            >
          </div>
       </div>
    </div>
