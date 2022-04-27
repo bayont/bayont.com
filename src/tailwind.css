@@ -17,14 +17,14 @@ body {
    z-index: -1;
    animation: slideIn 0.5s 0.75s linear forwards;
    opacity: 0;
-   width: max-content;
+   width: calc(50vw - 0.75rem);
 }
 
 .second {
    z-index: -1;
    width: max-content;
    opacity: 0;
-
+   max-width: 100%;
    animation: slideIn2 0.4s 1.55s linear forwards;
 }
 
@@ -32,7 +32,7 @@ body {
    z-index: -1;
    width: max-content;
    opacity: 0;
-
+   max-width: 100%;
    animation: slideIn2 0.4s 2.5s linear forwards;
 }
 
